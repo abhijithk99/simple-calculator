@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        
+        <form action="">
+            <label for="num1">First name:</label><br>
+            <input type="text" id="num1" name="fname" value=""><br>
+            <label for="num2">Last name:</label><br>
+            <input type="text" id="num2" name="lname" value=""><br><br>
+            result=<span id="result"></span><br>
+            <input type="button" value="+" onclick="return sum()">
+            <input type="button" value="-" onclick="return diff()">
+            <input type="button" value="*" onclick="return mul()">
+            <input type="button" value="/" onclick="return div()">
+          </form> 
+    </form>
+    <script>
+        function sum()
+        {
+            var a=parseFloat(document.getElementById('num1').value);
+            var b=parseFloat(document.getElementById('num2').value);
+            document.getElementById('result').innerHTML= a+b;
+        }
+        function diff()
+        {
+            var a=parseFloat(document.getElementById('num1').value);
+            var b=parseFloat(document.getElementById('num2').value);
+            document.getElementById('result').innerHTML= a-b;
+        }
+        function mul()
+        {
+            var a=parseFloat(document.getElementById('num1').value);
+            var b=parseFloat(document.getElementById('num2').value);
+            document.getElementById('result').innerHTML= a*b;
+        }
+        function div()
+        {
+            var a=parseFloat(document.getElementById('num1').value);
+            var b=parseFloat(document.getElementById('num2').value);
+            document.getElementById('result').innerHTML= a/b;
+        }
+    </script>
+</body>
+</html>
